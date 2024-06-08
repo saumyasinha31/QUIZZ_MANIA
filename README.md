@@ -29,7 +29,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/flutter-quiz-app.git
+   git clone https://github.com/saumyasinha31/flutter-quiz-app.git
    cd flutter-quiz-app
    ```
 

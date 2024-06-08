@@ -3,11 +3,7 @@ import 'package:quizz_mania/question_screen.dart';
 import 'package:quizz_mania/start_screen.dart';
 import 'package:quizz_mania/data/questions.dart';
 import 'package:quizz_mania/result_screen.dart';
-import 'package:quizz_mania/question_identifier.dart';
-import 'package:quizz_mania/summary_item.dart';
-import 'package:quizz_mania/questions_summary.dart';
-import 'package:quizz_mania/data/questions.dart';
-import 'package:quizz_mania/data/questions.dart';
+
 class Quiz extends StatefulWidget{
   const Quiz({super.key});
   @override

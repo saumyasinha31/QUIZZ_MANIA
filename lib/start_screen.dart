@@ -14,10 +14,10 @@ class StartScreen extends StatelessWidget {
           Image.asset(
             'assets/images/quiz-logo.png',
             width: 300,
-            color:  Colors.grey.shade200,
+
           ),
           SizedBox(height : 80),
-          const Text('Learn FLutter the fun way !'
+          const Text('Learn Science the fun way !'
           ,
           style: TextStyle(
             color: Colors.black26,

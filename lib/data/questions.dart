@@ -2,54 +2,54 @@ import 'package:quizz_mania/models/quiz_questions.dart';
 
 const questions = [
   QuizQuestion(
-    'What are the main building blocks of Flutter UIs?',
+    'Which among the following is a Noble Gas?',
     [
-      'Widgets',
-      'Components',
-      'Blocks',
-      'Functions',
+      'Helium',
+      'Nitrogen',
+      'Hydrogen',
+      'Oxygen',
     ],
   ),
-  QuizQuestion('How are Flutter UIs built?', [
-    'By combining widgets in code',
-    'By combining widgets in a visual editor',
-    'By defining widgets in config files',
-    'By using XCode for iOS and Android Studio for Android',
+  QuizQuestion('Stapes, the smallest and the lightest bone in human body, is the part of which organ ?', [
+    'Ear',
+    'Nose',
+    'Neck',
+    'hand',
   ]),
   QuizQuestion(
-    'What\'s the purpose of a StatefulWidget?',
+    'In which organ RBC are selectively destroyed/ recycled by macrophages?',
     [
-      'Update UI as data changes',
-      'Update data as UI changes',
-      'Ignore data changes',
-      'Render UI that does not depend on data',
+      'Spleen',
+      'Kidney',
+      'Liver',
+      'Pancreas',
     ],
   ),
   QuizQuestion(
-    'Which widget should you try to use more often: StatelessWidget or StatefulWidget?',
+    'Which among the following is the correct location of Adrenal Glands in Human Body?',
     [
-      'StatelessWidget',
-      'StatefulWidget',
-      'Both are equally good',
+      'Above kidneys',
+      'Below kidneys',
+      'Above Medulla Oblongata',
+      'Near Pancreases',
+    ],
+  ),
+  QuizQuestion(
+    'Which among the following is involved in movement of Muscles?',
+    [
+      'Myosin',
+      'Myoglobin',
+      'Mucin',
       'None of the above',
     ],
   ),
   QuizQuestion(
-    'What happens if you change data in a StatelessWidget?',
+    'Digestion is not a function of which of the following ?',
     [
-      'The UI is not updated',
-      'The UI is updated',
-      'The closest StatefulWidget is updated',
-      'Any nested StatefulWidgets are updated',
-    ],
-  ),
-  QuizQuestion(
-    'How should you update data inside of StatefulWidgets?',
-    [
-      'By calling setState()',
-      'By calling updateData()',
-      'By calling updateUI()',
-      'By calling updateState()',
+      'Biotin',
+      'Pepsin',
+      'Renin',
+      'None of the above',
     ],
   ),
 ];

@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+
 import 'package:quizz_mania/start_screen.dart';
 import 'package:quizz_mania/answer_button.dart';
 import 'package:quizz_mania/data/questions.dart';
 class QuestionsScreen extends StatefulWidget {
-  const QuestionsScreen({super.key});
+  const QuestionsScreen({super.key, required this.onSelectAnswer});
+
+  final void Function(String answer) onSelectAnswer;
 
   @override
   State<QuestionsScreen> createState() {
@@ -14,8 +17,8 @@ class QuestionsScreen extends StatefulWidget {
 class _QuestionsScreenState extends State<QuestionsScreen> {
   var currentQuestionIndex =0;
 
-  void answerQuestion() {
-
+  void answerQuestion(String answer) {
+widget.onSelectAnswer(answer);
     setState(() {
       currentQuestionIndex++;
     });
@@ -35,13 +38,15 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
             children: [
             Text(
               currentQuestions.text,
-              textAlign : TextAlign.center,
+
             ),
 
 
               const SizedBox(height: 30),
               ...currentQuestions.getShuffledAnswers().map((answer) {
-                return AnswerButton(answerText: answer, onTap: answerQuestion);
+                return AnswerButton(answerText: answer, onTap: (){
+                  answerQuestion(answer);
+                });
               }),
 
             ],
